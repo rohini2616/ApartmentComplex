@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signinbg"
+    tools:context=".view.activities.RegisterActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8F000000" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etRegUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/inputbg"
+        android:drawableLeft="@drawable/profile"
+        android:drawablePadding="10dp"
+        android:hint="UserName"
+        android:padding="15dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvRegister" />
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/inputbg"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:padding="15dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/etRegUserName" />
+
+    <EditText
+        android:id="@+id/etRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/inputbg"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:padding="15dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/etRegEmail" />
+
+    <EditText
+        android:id="@+id/etRegConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/inputbg"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:hint="Confirm Password"
+        android:padding="15dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/etRegPassword" />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/inputbg"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRegConfirmPassword" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/inputbg"
+        android:padding="10dp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRegConfirmPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
